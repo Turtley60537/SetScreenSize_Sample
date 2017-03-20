@@ -25,20 +25,17 @@ class Screen {
   //右端クリック
   void rightPressed() {
     distX = width-mouseX;
-    resizeFlag = true;
     resizeWidthFlag = true;
   }
 
   //下端クリック
   void downPressed() {
     distY = height-mouseY;
-    resizeFlag       = true;
     resizeHeightFlag = true;
   }
   
   //サイズ変更終了
   void released() {
-    if (resizeFlag)       resizeFlag       = false;
     if (resizeWidthFlag)  resizeWidthFlag  = false;
     if (resizeHeightFlag) resizeHeightFlag = false;
   }

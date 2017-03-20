@@ -1,15 +1,14 @@
 //スクリーンサイズ変更の要素
-boolean resizeFlag = false;
 Screen screen;
 
 void setup(){
-  size(400, 700);  
+  size(400, 400);  
   screen = new Screen();
 }
 
 void draw(){
   //スクリーンサイズ変更
-  if (resizeFlag) {
+  if (screen.resizeWidthFlag || screen.resizeHeightFlag) {
     screen.changeSize();
   }
 }
