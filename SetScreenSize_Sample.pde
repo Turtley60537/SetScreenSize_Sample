@@ -3,7 +3,7 @@ boolean resizeFlag = false;
 Screen screen;
 
 void setup(){
-  size(1000, 700);  
+  size(400, 700);  
   screen = new Screen();
 }
 
