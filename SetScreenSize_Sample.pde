@@ -19,7 +19,7 @@ void mousePressed(){
   if (mouseByRightFrame()) {
     screen.rightPressed();
   }
-  if (mouseByDownFrame()) {
+  if (mouseByBottomFrame()) {
     screen.downPressed();
   }
 }
@@ -33,6 +33,6 @@ boolean mouseByRightFrame() {
   return mouseX>width-20 && mouseX<=width;
 }
 
-boolean mouseByDownFrame() {
+boolean mouseByBottomFrame() {
   return mouseY>height-20 && mouseY<=height;
 }
